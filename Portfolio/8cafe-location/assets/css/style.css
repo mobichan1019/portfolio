@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Asset&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FECBCB;
+    font-family: 'Asset', cursive;
+}
+
+.content{
+    width: 80%;
+    height: 800px;
+    background-color: rgba(255, 255, 255, .4);
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+/* .content-wrapper{
+    margin: auto;
+    height: auto;
+} */
+
+.content-wrapper .title{
+    margin-top: 35px;
+}
+
+.title h1{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 35px;
+   
+}
+
+.content .content-map{
+    /* border: solid 4px blue; */
+    display: flex;
+    height: 650px;
+    margin: auto;
+    margin-top: 35px;
+
+}
+
+.content-map .map{
+    /* border: solid 4px red; */
+    flex: 1;
+    margin: 25px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.content-map .mapinfo{
+    /* border: solid 4px green; */
+    flex: 1;
+    display: flex;
+    text-align: center;
+}
+
+.info{
+    /* border: solid 4px skyblue; */
+    margin: auto;
+}
+
+.info h1{
+    font-size: 60px;
+    color: #FFFFFF;
+    -webkit-text-stroke:0.5px #000;
+}
+
+.info > span {
+    padding-top: 20px;   
+    font-size: 35px;
+}
+
+.info p{
+    font-size: 40px;
+    font-family: 'Imbue', serif; 
+}
+
+.box3{
+    font-family: 'Asset', cursive;
+    /* color: aliceblue; */
+    text-decoration: none;
+    position: relative;
+    margin-right: 220px;
+    
+    color: black;
+}
+
+.box3 a{
+    font-size: 35px;
+    text-decoration: none;
+    background-color: none;
+    position: absolute;
+    right: -150px;
+    bottom: 50px;
+
+}
+
+
+@media screen and (max-width:1440px) {
+
+    .info .zip{
+        display: block;
+    }
+ 
+}
+
+@media screen and (max-width:1024px){
+
+    .title h1{
+        font-size: 60px;
+       
+    }
+    .info h1{
+        font-size: 50px;
+
+    }
+
+    .info > span{
+        font-size: 30px;
+    }
+
+    .info > p span{
+        display: block;
+
+    }
+
+    .box3 a{
+        font-size: 25px;
+        position: absolute;
+        right: -170px;
+        bottom: 100px;
+    
+    }
+    
+    
+}
+
+@media screen and (max-width:768px) {
+   
+    .content .content-map{
+        flex-direction: column;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .info h1{
+        font-size: 35px;
+    }
+    
+    .info > span{
+        font-size: 20px;
+    }
+
+    .info > p span{
+        display: inline;
+
+    }
+
+    .info .zip{
+        display: block;
+    }
+
+    .box3 a{
+        font-size: 20px;
+        position: absolute;
+        right: -200px;
+        bottom: 0px;
+    
+    }
+    
+}
+
+@media screen and (max-width:426px){
+
+    .title h1{
+        font-size: 30px;
+    }
+
+    .info h1{
+        font-size: 25px;
+    }
+    
+    .info > span{
+        font-size: 15px;
+    }
+
+    .info p{
+        font-size: 25px;
+    }
+
+    .box3 a{
+        font-size: 15px;
+        position: absolute;
+        right: -210px;
+        bottom: -40px;
+    
+    }
+
+ 
+}
+
+@media screen and (max-width:376px){
+    .title h1{
+        font-size: 25px;
+    }
+
+    .info > span{
+        font-size: 12px;
+    }
+
+    .info p{
+        font-size: 20px;
+    }
+
+
+    .info > p span{
+        display: block;
+
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+    .title h1{
+        font-size: 20px;
+    }
+    
+}
+
+

@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Asset&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* text-shadow:0.5px 0.5px 0.8px rgb(91, 88, 88);
+    font-family: 'Imbue', serif; 
+    font-family: 'Asset', cursive;*/
+
+    body{
+        background-image: url(../img/cafe\ logo.jpg);
+        background-size: cover;
+        width: 100%;
+        /* height: 1200px; */
+    }
+
+    .wrapper{
+        /* border: solid 2px blue; */
+        width: 100%;
+        margin: 0 auto;
+        text-shadow:0.5px 0.5px 0.8px rgb(91, 88, 88);
+        color:#f97272;
+    }
+
+    .wrapper nav{
+        display: flex;
+        /* border: solid 2px black; */
+    }
+
+
+    .wrapper h1{
+        padding: 10px;
+        text-transform: none;
+        padding-left: 3%;
+        font-style: medium;
+        font-size: 50px;
+        flex: 1;
+        /* border: solid 2px yellow; */
+    }
+
+    .wrapper h1 a{
+        font-family: 'Imbue', serif;
+        font-size: 55px;
+        color:#f97272;
+        text-decoration: none;
+    }
+
+    .wrapper h1 a:hover{
+        color: #fff;
+     }
+
+
+    .wrapper ul{
+        list-style: none;
+        text-align: right;
+        margin-left: auto;
+        /* border: solid 3px yellow; */
+        display: flex;
+        align-items: center;
+        flex: 3;
+        justify-content: space-evenly;
+        /* text-decoration: none; */
+    
+    }
+
+    .wrapper ul a{
+        text-shadow:0.5px 0.5px 0.8px rgb(91, 88, 88);
+        font-family: 'Imbue', serif;
+        color:#f7a9a9;
+        font-size: 45px;
+        text-decoration: none;
+        font-weight: 700; 
+    }
+
+    .wrapper ul a:hover{
+       color: #fff;
+    }
+    /* Content */
+
+    .content{
+        /* border: solid  2px magenta; */
+        width: 100%;
+        height: 1000px;
+        font-family: 'Asset', cursive;
+        margin-top: 10%;
+       
+    }
+
+    .name{
+        /* border: solid  2px purple; */
+        width: 50%;
+        height: 200px;
+        color: white;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        /* flex: 1; */
+    }
+
+    .name h1{
+        text-shadow:0.5px 0.5px 0.8px rgb(91, 88, 88);
+        font-size: 90px;
+    }
+
+    .line1{
+        /* border: solid  2px peru; */
+        width: 100%;
+        height: 300px;
+        /* text-align: right; */
+        padding-top: 100px;
+        /* margin-left: 100px; */
+        position: relative;
+        
+    }
+
+    .line1 h1 span{
+        margin-right: 100px;
+        /* display: block; */
+    }
+
+    .line1 h1{
+        font-size: 60px;
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+    }
+    
+    .line2{
+        /* border: solid  2px navy; */
+        width: 60%;
+        height: 400px;
+        margin-left: 100px;
+    }
+
+    .line2 h1{
+        font-size: 25px;
+        text-align: left;
+    }
+
+    /* Content */
+
+    .content2{
+        display: flex;
+        /* border: solid 2px red; */
+        /* gap: 30px; */
+        margin-top: 400px;
+    }
+
+    .content2-circle{
+        /* border: solid 2px blueviolet; */
+        width: 350px;
+        height: 350px;
+        border-radius: 350px;
+        margin: auto;
+        /* padding: 1em; */
+        display: flex;
+        margin-bottom: 150px;
+    }
+
+    .content2 > div{
+        flex: 1;
+        /* border: solid 2px tomato; */
+        text-align: center;
+        display: flex;
+    }
+
+    .content2-circle h1{
+        margin: auto;
+        font-family: 'Asset', cursive;
+    }
+
+    .content2-circle h1 a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .content2-circle h1 a:hover{
+        color: #3ac4d3;
+    }
+
+    .menu .content2-circle{
+        background-image: url(../img/menu.jpg);
+        background-position: center;
+        background-size: cover;
+        font-size: 25px;
+    }
+
+
+    .res .content2-circle{
+        background-color: #fff;
+    }
+
+    .location .content2-circle{
+        background-color: #fff;
+        /* padding-top: 50px; */
+    }
+
+    .location i{
+        font-size: 100px;
+    }
+
+    @media screen and (max-width:1025px){
+        .name h1{
+            font-size: 70px;
+        }
+
+        .line1 h1{
+            font-size: 45px;
+            padding-bottom: 20px;
+        }
+
+        .content2-circle{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+        }
+
+        .menu .content2-circle{
+            font-size: 20px;
+        }
+
+        .res .content2-circle{
+            font-size: 15px;
+        }
+
+        .location i{
+            font-size: 70px;
+        }
+
+        .location .content2-circle{
+            font-size: 13px;
+        }
+
+    }
+
+    @media screen and (max-width:768px){
+        body{
+            background-position: center;
+            width: 100%;
+        }
+
+        .wrapper h1{
+            font-size: 30px;
+        }
+        
+        .wrapper ul a{
+            font-size: 30px;
+        }
+
+        .content{
+            margin-top: 5%;
+        }
+        .name{
+            width: 70%;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .name h1{
+            font-size: 55px;
+        }
+
+        .line1{
+            padding-top: 10px;
+            height: 150px;
+        }
+
+        .line1 h1{
+            font-size: 40px;
+        }
+
+        .line2{
+            margin-left: 50px;
+            width: 40%;
+        }
+
+        .line2 h1{
+            font-size: 23px;
+        }
+
+        .content2{
+            margin-top: 50px;
+        }
+
+        .content2-circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+
+        .menu .content2-circle{
+            font-size: 15px;
+        }
+
+        .res .content2-circle{
+            font-size: 10px;
+        }
+
+        .location i{
+            font-size: 80px;
+        }
+
+        .location .content2-circle{
+            font-size: 8px;
+        }
+    }
+
+    @media screen and (max-width:618px){
+        .wrapper h1 a{
+            font-size: 35px;
+        }
+        
+        .wrapper ul a{
+            font-size: 30px;
+        }
+
+        .wrapper ul{
+            flex-direction: column;
+        }
+
+        .line1 h1{
+            font-size: 40px;
+        }
+
+        .line2{
+            margin-left: 50px;
+            width: 60%;
+        }
+
+        .line2 h1{
+            font-size: 15px;
+        }
+
+        .content2{
+            flex-direction: column;
+        }
+
+        .content2 > div{
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+    }
+
+    @media screen and (max-width:426px){
+        .name h1{
+            margin-top: 250px;
+            font-size: 40px;
+            margin-left: -30px;
+        }
+
+        .line1 h1{
+            font-size: 30px;
+            margin-right: -50px;
+            margin-bottom: 80px;
+        }
+
+        .content2{
+            margin-top: 200px;
+        }
+    }
+
+    
+

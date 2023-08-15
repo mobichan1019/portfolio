@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8cafe reservation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+   <div class="content">
+       <div class="content-wrapper">
+
+           <div class="title">
+
+
+                 <h1>Make a <br>Reservation</h1>
+                 <p>call us at +1 87-4564-5678 <br> or fullfill below</p>
+          </div>
+
+            <div class="box1"> <!--First, last name, e-mail...-->
+
+                  <form action=""> <!--First name and Last name-->
+                        <div id="name" class="name">
+
+                          <div id="firstname" class="firstname">
+                             <label for="firstname">First name</label> <br>
+                             <input type="text" name="firstname" id="firstname" required>
+                         </div>
+
+                         <div id="lastname" class="lastname">
+                             <label for="lastname">Last name</label> <br>
+                             <input type="text" name="lastname" id="lastname" required>
+                         </div>
+                       </div>
+                
+
+                      <div class="e-mail" id="e-mail"> <!--E-mail-->
+
+                          <div>
+                               <label for="e-mail">Email Address</label><br>
+                              <input type="email" name="e-mail" id="email" required>
+                         </div>
+
+                         <div></div>
+                      </div>
+
+                      <div class="date"> <!--Date-->
+
+                          <div>
+                              <label for="date">Date</label> <br>
+                              <input type="date" name="date" id="date" required>
+                         </div>
+
+                           <div></div>
+                     </div>
+
+
+                      <div class="time">
+                       <!-- <label for="time">Time</label>
+                       <input type="time" name="time" id="time"> -->
+
+                          <div class="dinner">
+                               <label for="dinner">Dinner Time</label><br>
+                               <input type="time" name="time" id="time" value="18:00" min="18:00" max="22:00" required> <br>
+                              <small>6pm - 10pm</small>
+                          </div>
+
+                           <div class="lunch">
+                               <label for="lunch"> Lunch Time</label> <br>
+                               <input type="time" name="time" id="time" value="11:00" min="14:00" max="22:00" required>
+                               <br><small>11am - 2pm</small>
+                          </div>
+                      </div>
+                 </div>
+
+                             <div class="box2"> <!--for button-->    
+                                 <!-- <button id="send-btn">send</button> -->
+                                 <input type="submit" value="Send">
+                             </div>
+                 </form>
+
+                 <div class="box3">
+                    <a href="../8cafe/8cafe.html"> << Go Back</a>
+                 </div>
+
+                
+
+       </div>
+
+   </div>
+
+
+    <!-- JQuery CDN version --online -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+   
+   
+    <!-- JQuery download version offline -->
+    <script src="assets/JS/jquery-3.7.0.min.js"></script>
+
+
+    <script src="assets/JS/script.js"></script>
+    
+</body>
+</html>
